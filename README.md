@@ -34,3 +34,23 @@ The courseware repository was cloned from:
 
 ## Notes
 This README will be updated throughout the semester with new work, links, and progress updates.
+
+## Assignment: Deal Cards (Deck of Cards API)
+
+This assignment demonstrates how to consume a REST API using Python.
+
+Features implemented:
+
+- Create and shuffle a deck
+- Draw cards
+- Add cards to piles
+- List pile contents
+- Shuffle piles
+- Draw from piles (top/random)
+- Return cards to deck
+- Reshuffle remaining cards
+- Create brand new deck (with jokers)
+- Create partial deck
+- Access back-of-card image
+
+File: `assignments/deal_cards.py`
