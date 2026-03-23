@@ -16,7 +16,7 @@ retrieveTags = [
     "Direction"
 ]
 
-with open("week03_train_full.csv", mode="w", newline="") as train_file:
+with open("lab2_train_full.csv", mode="w", newline="") as train_file:
     train_writer = csv.writer(train_file, delimiter="\t", quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
     train_writer.writerow(retrieveTags)
