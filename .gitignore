@@ -1,2 +1,6 @@
 .DS_Store
 .DS_Store
+.DS_Store
+__pycache__/
+assignments/labs/config.py
+assignments/labs/output.pdf
