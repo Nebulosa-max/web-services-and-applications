@@ -4,3 +4,5 @@
 __pycache__/
 assignments/labs/config.py
 assignments/labs/output.pdf
+config.py
+labs/config.py
