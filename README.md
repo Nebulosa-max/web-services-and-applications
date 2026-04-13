@@ -68,3 +68,54 @@ This lab demonstrates basic MySQL operations.
 
 ## Files
 - `lab06_01.sql`
+
+# Lab 06.2 – Python and Databases
+
+## Overview
+This lab demonstrates how to connect Python to a MySQL database and perform basic CRUD operations.
+
+CRUD stands for:
+- **Create**
+- **Read**
+- **Update**
+- **Delete**
+
+The lab also includes a simple `StudentDAO` class to organise the database operations in a reusable way.
+
+## Files included
+- `lab06_2_create_db.py` – creates the `wsaa` database
+- `lab06_2_create_table.py` – creates the `student` table
+- `lab06_2_insert.py` – inserts a record into the table
+- `lab06_2_view.py` – reads and displays a record
+- `lab06_2_update.py` – updates a record
+- `lab06_2_delete.py` – deletes a record
+- `studentDAO.py` – contains the `StudentDAO` class
+- `lab06_2_testdao.py` – tests the DAO methods
+
+## Database details
+This lab uses:
+- **MySQL**
+- host: `localhost`
+- user: `root`
+- password: `root`
+- database: `wsaa`
+
+## Table structure
+The `student` table contains:
+- `id` – integer, primary key, auto increment
+- `name` – varchar
+- `age` – integer
+
+## How to run
+Run the files in this order:
+
+```bash
+python lab06_2_create_db.py
+python lab06_2_create_table.py
+python lab06_2_insert.py
+python lab06_2_view.py
+python lab06_2_update.py
+python lab06_2_view.py
+python lab06_2_delete.py
+python lab06_2_view.py
+python lab06_2_testdao.py
