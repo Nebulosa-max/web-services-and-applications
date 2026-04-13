@@ -54,3 +54,17 @@ Features implemented:
 - Access back-of-card image
 
 File: `assignments/deal_cards.py`
+
+# Lab 06.01 Databases
+
+This lab demonstrates basic MySQL operations.
+
+## Tasks completed
+- Created database `wsaa`
+- Created table `student`
+- Inserted, selected, updated and deleted data in `student`
+- Created table `book`
+- Inserted sample data into `book`
+
+## Files
+- `lab06_01.sql`
