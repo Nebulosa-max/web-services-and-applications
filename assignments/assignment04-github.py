@@ -2,8 +2,8 @@ from github import Github
 from getpass import getpass
 
 # Assignment 04 - GitHub API
-# This program reads a file from a GitHub repository,
-# replaces "Andrew" with my name, and commits the change back.
+# This program uses the GitHub API to read a file from a repository,
+# replace the text "Andrew" with my name, and commit the change back.
 
 ACCESS_TOKEN = getpass("Paste your GitHub token here: ")
 
