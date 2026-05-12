@@ -1,121 +1,108 @@
-# WSAA-Courseware
-Courseware for the Web services and Applications module, part of the HDip in Data Analytics
-# Web Services and Applications (WSAA)
+# Web Services and Applications
 
-This repository contains my work for the **Web Services and Applications** module (ATU), including **assignments** and **labs**.
+Student: Sophia Godoy
+
+This repository contains my coursework for the Web Services and Applications module.
 
 ## Repository structure
 
-- `assignments/` — Weekly assignments and submissions
-- `labs/` — Lab work and practice tasks
-- `WSAA-Courseware/` — Courseware cloned from the lecturer’s repository (reference material)
+- assignments: assignment work
+- labs: weekly lab work and practice exercises
 
-> Note: `WSAA-Courseware/` is included for learning/reference and is not where my submissions are kept.
+## Assignments completed
 
-## Setup
+### Assignment 03 - CSO dataset
 
-### Courseware (reference)
-The courseware repository was cloned from:
+Files:
+- assignments/assignment03-cso.py
+- assignments/cso.json
 
-- `https://github.com/andrewbeattycourseware/WSAA-Courseware`
+This assignment retrieves the CSO exchequer account historical series dataset and stores the result in a JSON file called cso.json.
 
-### Tools
-- VS Code
-- Git / GitHub
-- Python (via Anaconda)
+### Assignment 04 - GitHub API
 
-## Progress log
+File:
+- assignments/assignment04-github.py
 
-### 2026-02-09
-- Created the module repository: `web-services-and-applications`
-- Created folder structure: `assignments/` and `labs/`
-- Cloned courseware repository: `WSAA-Courseware`
-- Completed the “Quick Assignment HTTP and URLs” quiz (submission completed)
+This assignment uses the GitHub API to read a file from a repository, replace the text Andrew with my name, and commit the change back to GitHub.
+
+For security, the GitHub token is not stored directly in the file. The program asks for the token when it runs.
+
+## Labs completed
+
+### Lab 02 - Data representation and CSV work
+
+Files:
+- labs/lab02_representing_data.py
+- labs/lab02_trains.py
+- lab02_train.csv
+- lab02_train_full.csv
+
+### Lab 03 - Requests
+
+File:
+- labs/lab03_1_requests.py
+
+This lab covers making HTTP requests with Python.
+
+### Lab 04 - GitHub API
+
+Files:
+- labs/lab04_github.py
+- labs/lab04_03_githubmodule.py
+
+These labs cover using the GitHub API from Python.
+
+### Lab 05 - REST server
+
+File:
+- labs/lab05.01_rest_server.py
+
+This lab covers basic REST server functionality.
+
+### Lab 06 - SQL and CRUD
+
+Files:
+- labs/lab06_1.sql
+- labs/lab06_2_create_db.py
+- labs/lab06_2_create_table.py
+- labs/lab06_2_insert.py
+- labs/lab06_2_view.py
+- labs/lab06_2_update.py
+- labs/lab06_2_delete.py
+
+These labs cover database creation and Create, Read, Update and Delete operations.
+
+### Lab 09.1 - Car Viewer
+
+File:
+- labs/lab09_1_carviewer.html
+
+This lab displays car data in a browser-based viewer.
+
+### Lab 09.4 - AJAX Calls to REST
+
+File:
+- labs/lab09_4_ajax.html
+
+This lab uses AJAX calls to perform Create, Update and Delete operations.
+
+Due to CORS restrictions with the external API, the lab includes local fallback behaviour so that the page can still demonstrate the required functionality.
+
+To test locally:
+
+python3 -m http.server 8000
+
+Then open in Chrome:
+
+http://localhost:8000/labs/lab09_4_ajax.html
+
+Chrome is recommended because Safari may block some requests more strictly.
 
 ## Notes
-This README will be updated throughout the semester with new work, links, and progress updates.
 
-## Assignment: Deal Cards (Deck of Cards API)
+Some external API requests may be affected by browser CORS restrictions. Where needed, local fallback behaviour was used to demonstrate the required functionality.
 
-This assignment demonstrates how to consume a REST API using Python.
+## Author
 
-Features implemented:
-
-- Create and shuffle a deck
-- Draw cards
-- Add cards to piles
-- List pile contents
-- Shuffle piles
-- Draw from piles (top/random)
-- Return cards to deck
-- Reshuffle remaining cards
-- Create brand new deck (with jokers)
-- Create partial deck
-- Access back-of-card image
-
-File: `assignments/deal_cards.py`
-
-# Lab 06.01 Databases
-
-This lab demonstrates basic MySQL operations.
-
-## Tasks completed
-- Created database `wsaa`
-- Created table `student`
-- Inserted, selected, updated and deleted data in `student`
-- Created table `book`
-- Inserted sample data into `book`
-
-## Files
-- `lab06_01.sql`
-
-# Lab 06.2 – Python and Databases
-
-## Overview
-This lab demonstrates how to connect Python to a MySQL database and perform basic CRUD operations.
-
-CRUD stands for:
-- **Create**
-- **Read**
-- **Update**
-- **Delete**
-
-The lab also includes a simple `StudentDAO` class to organise the database operations in a reusable way.
-
-## Files included
-- `lab06_2_create_db.py` – creates the `wsaa` database
-- `lab06_2_create_table.py` – creates the `student` table
-- `lab06_2_insert.py` – inserts a record into the table
-- `lab06_2_view.py` – reads and displays a record
-- `lab06_2_update.py` – updates a record
-- `lab06_2_delete.py` – deletes a record
-- `studentDAO.py` – contains the `StudentDAO` class
-- `lab06_2_testdao.py` – tests the DAO methods
-
-## Database details
-This lab uses:
-- **MySQL**
-- host: `localhost`
-- user: `root`
-- password: `root`
-- database: `wsaa`
-
-## Table structure
-The `student` table contains:
-- `id` – integer, primary key, auto increment
-- `name` – varchar
-- `age` – integer
-
-## How to run
-Run the files in this order:
-
-```bash
-python lab06_2_create_db.py
-python lab06_2_create_table.py
-python lab06_2_insert.py
-python lab06_2_view.py
-python lab06_2_update.py
-python lab06_2_view.py
-python lab06_2_delete.py
-python lab06_2_view.py
-python lab06_2_testdao.py
+Sophia Godoy
