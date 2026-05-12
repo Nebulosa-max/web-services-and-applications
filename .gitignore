@@ -1,15 +1,5 @@
 .DS_Store
-.DS_Store
-.DS_Store
-__pycache__/
-assignments/labs/config.py
-assignments/labs/output.pdf
-config.py
-labs/config.py
-venv/
-.venv/
 __pycache__/
 *.pyc
-instance/
 .env
-.DS_Store
+config.py
